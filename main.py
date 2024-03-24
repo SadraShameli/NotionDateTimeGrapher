@@ -5,7 +5,7 @@ from collections import defaultdict
 
 def parse_files():
     entries = []
-    for file in glob.glob("*.txt"):
+    for file in glob.glob("**/*.txt"):
         with open(file, "r") as file:
             entries += (file.read().splitlines())
     return entries
